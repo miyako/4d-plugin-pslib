@@ -1,2 +1,2 @@
 # 4d-plugin-pslib
-Wrapper for pslib
+Wrapper for [pslib](http://pslib.sourceforge.net)

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+    <header>
+        <note>pslib</note>
+    </header>
+    <group resname="themes">
+        <trans-unit id="" resname="D580FDF9031144F8B12E57EF4BF25DB5" translate="no">
+            <source>pslib</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="D580FDF9031144F8B12E57EF4BF25DB5">
+    </group>
+</xliff>

@@ -1,0 +1,179 @@
+<< Der Auf¦forderung>> Dem Ersuchen Ihres Mitarbeiters, für die ,,Times`` etwas
+über ,,Relativität`` zu schreiben, komme ich gerne nach. Denn nach dem
+beklagenswerten Zusammenbruch der früheren regen internationalen Beziehungen
+der Gelehrten ist mir dies eine willkommene, ja die einzige << Veranlassung>>
+Gelegenheit, meinem Gefühl der Freude und Dankbarkeit den englischen Astronomen
+und Physikern gegenüber auszusprechen. Es entspricht ganz den großen und
+:stolzen Traditionen der wissenschaftlichen Arbeit in Ihrem Lande, daß << Ihre
+besten Männer ihrer >> bedeutende Forscher viel Zeit und Mühe, Ihre
+wissenschaftlichen Institute große materielle Mittel aufwendeten,[2] um eine
+Folgerung einer Theorie zu prüfen, die im Lande Ihrer Feinde während des
+Krieges vollendet und publiziert << ,wenn auch nicht>> worden ist. Wenn es :sich
+bei der Untersuchung des Einflußes des Gravitationsfeldes der Sonne auf die
+Lichtstrahlen auch um eine rein objektive Angelegenheit handelte, :so << kann ich
+doch nicht anders >> drängt es mich doch, den englischen Fachgenossen auch
+meinen persönlichen Dank für ihr Werk zu :sagen; denn ohne das :selbe hätte ich
+die Prüfung der wichtigsten Konsequenz meiner Theorie wohl nicht mehr
+erlebt.--[3]
+
+Man kann in der Physik Theorien verschiedener Art unterscheiden. Die
+Theorien erster Art nenne ich meisten :sind konstruktive Theorien. Diese
+:suchen aus einem relativ einfachen zu grunde gelegten Formalismus ein
+Bild der komplexeren Erscheinungen zu konstruieren. So :sucht die
+kinetische Gas¦theorie die mechanischen, thermischen und
+Diffusionsvorgänge auf Bewegungen der Moleküle zurückzuführen, d. h. aus
+der Hypothese der Molekularbewegung zu konstruieren.  Wenn man :sagt, es
+:sei gelungen, eine Gruppe von Naturvorgängen zu begreifen, :so meint man
+damit immer, daß eine konstruktive Theorie gefunden :sei, die die
+betreffenden Vorgänge umfaßt.
+
+Es gibt aber neben die:ser wichtigsten Klasse von Theorien eine zweite, ich will
+:sie Prinzip-Theorien nennen. Diese bedienen :sich nicht der :synthetischen
+:sondern der analytischen Methode. Ausgangspunkt und Basis bilden nicht
+hypothetische Konstruktionselemente :sondern empirisch gefundene allgemeine
+Eigenschaften der Naturvorgänge (Prinzipe), aus denen dann mathematisch
+formulierte Kriterien folgen, denen die einzelnen Vorgänge bezw. deren
+theoretische Bilder zu genügen haben. So :sucht die Thermodynamik aus dem
+allgemeinen Erfahrungsresultat, ein perpetuum mobile unmöglich :sei, auf
+analytischem Wege Bedingungen zu ermitteln, denen die einzelnen Vorgänge
+genügen müssen.
+
+Vorzug der konstruktiven Theorien ist Vollständigkeit, Anpassungsfähigkeit und
+Anschaulichkeit, Vorzug der Prinzip-Theorien ist logische Vollkommenheit und
+Sicherheit der Grundlage.[4]
+
+Die Relativitäts¦theorie gehört zu den Prinziptheorien. Um ihr Wesen zu
+erfassen, muß man also in erster Linie die Prinzipe kennen lernen, auf denen
+:sie beruht.  Bevor ich auf die:se eingehe muß ich aber bemerken, daß die
+Relativitäts¦theorie einem Gebäude gleicht, das aus zwei gesonderten Stockwerken
+besteht, der :speziellen und der allgemeinen Relativitäts¦theorie. Die :spezielle
+Relativitäts¦theorie, auf welcher die allgemeine ruht, bezieht :sich auf alle
+physikalischen Vorgänge mit Aus¦schluß der Gravitation; die allgemeine
+Relativitäts¦theorie liefert das Ge:setz der Gravitation und deren Relationen zu
+den andern Naturkräften.
+
+Seit dem griechischen Altertum ist es wohlbekannt, daß es zur Beschreibung der
+Bewegung eines Körpers eines zweiten Körpers bedarf, auf welchen die Bewegung
+des ersten bezogen wird.  Die Bewegung eines Wagens wird auf
+den Erdboden bezogen, die eines Planeten auf die Totalität der :sichtbaren
+Fixsterne. In der Physik nennt man den Körper, auf den man die Vorgänge
+räumlich bezieht, Koordinatensystem. Es können z. B. die Ge:setze der Mechanik
+von Galilei und Newton nur unter Benutzung eines Koordinatensystems formuliert
+werden.
+
+Der Bewegungszustand des Koordinatensystems darf aber nicht willkürlich gewählt
+werden, wenn die Ge:setze der Mechanik gelten :sollen (es muß ,,drehungsfrei``
+und ,,beschleunigungsfrei`` :sein). Man nennt ein in der Mechanik zugelassenes
+Koordinatensystem ein ,,Inertialsystem``. Der Bewegungszustand eines
+Inertialsystems ist aber nach der Mechanik kein durch die Natur eindeutig
+bestimmter.  Es gilt vielmehr der Satz: Ein relativ zu einem Inertialsystem
+gradlinig und gleichförmig bewegtes Koordinatensystem ist ebenfalls ein
+Inertialsystem. Unter dem ,,speziellen Relativitätsprinzip`` versteht man nun
+die Verallgemeinerung die:ses Satzes auf beliebige Naturvorgänge: Jedes
+allgemeine Naturgesetz, welches in Bezug auf ein Koordinatensystem K gilt, muß
+auch unverändert gelten in Bezug auf ein Koordinatensystem K, welches relativ zu
+K in gleichförmiger Translationsbewegung ist.
+
+Das zweite Prinzip, auf dem die :spezielle Relativitäts¦theorie beruht, ist das
+,,Prinzip von der Konstanz der Vakuum-Lichtgeschwindigkeit``. Dieses :sagt: Das
+Licht hat im Vakuum :stets eine bestimmte Ausbreitungs-Geschwindigkeit c
+(unabhängig vom Bewegungszustand der Lichtquelle).[5] Das Vertrauen, welches
+der Physiker die:sem Satz entgegenbringt, :stammt aus den Erfolgen der
+Maxwell-Lorentz'schen Elektrodynamik.
+
+Die beiden genannten Prinzipe :sind durch die Erfahrung mächtig gestützt,
+schienen aber logisch miteinander nicht vereinbar zu :sein. Ihre logische
+Vereinigung gelang schließlich der :speziellen Relativitäts¦theorie durch
+eine Abänderung der Kinematik, d. h. der Lehre von den Ge:setzen, die Raum
+und Zeit (vom physikalischen Standpunkt aus) betreffen. Es zeigte :sich
+daß die Aus¦sage der Gleichzeitigkeit zweier Ereignisse nur inbezug auf
+ein Koordinatensystem Sinn habe, daß die Gestalt von Meßkörpern und die
+Ganggeschwindigkeit von Uhren von deren Bewegungszustand zum
+Koordinatensystem abhängen müsse.
+
+Die alte Physik inklusive der Galilei-Newton'schen Bewegungs-Ge:setze
+passten aber nicht zu der angedeuteten relativistischen Kinematik. Aus
+letzterer flossen allgemeine mathematische Bedingungen, denen die
+Naturgesetze entsprechen mußten, wenn die beiden genannten allgemeinen
+Prinzipien wirklich zutreffen :sollten.  Diesen mußte die Physik
+angepasst werden. Insbesondere gelangte man zu einem neuen
+Bewegungsgesetz für (rasch bewegte) Massenpunkte, welches an elektrisch
+geladenen Teilchen vortrefflich bestätigt wurde. Das wichtigste Ergebnis
+der :speziellen Relativitäts¦theorie betraf die träge Masse körperlicher
+Systeme. Es ergab :sich, daß die Trägheit eines Systems von :seinem
+Energieinhalt abhängen müsse, und man gelangte geradezu zu der
+Auf¦fassung, daß träge Masse nichts anderes :sei als latente Energie. Der
+Satz von der Erhaltung der Masse verlor :seine Selbständigkeit und
+verschmolz mit dem von der Erhaltung der Energie.
+
+Die :spezielle Relativitäts-Theorie, welche nichts anderes war als eine
+systematische Fortsetzung der Maxwell-Lorentz'schen Elektrodynamik, wies
+aber über :sich :selbst hinaus. Sollte die Unabhängigkeit der
+physikalischen Ge:setze vom Bewegungszustande des Koordinatensystems auf
+gleichförmige Translationsbewegungen der Koordinatensysteme zu einander
+beschränkt :sein? Was hat die Natur mit den von uns eingeführten
+Koordinatensystemen und deren Bewegungszustand zu thun? Wenn es schon für
+die Naturbeschreibung nötig ist, :sich eines von uns willkürlich
+eingeführten Koordinatensystems zu bedienen, :so :sollte die Wahl von
+dessen Bewegungszustand keiner Beschränkung unterworfen :sein; die Ge:setze
+:sollten von dieser Wahl ganz unabhängig :sein (Allgemeines Relativitäts
+Prinzip).
+
+Die Durchführung dieses allgemeinen Relativitätsprinzips wird nahe gelegt
+durch eine längst bekannte Erfahrung, nach welcher die Schwere  alle
+Körpern dies¦selbe Beschleunigung erteilt. und die Trägheit eines Körpers
+durch dieselbe Konstante beherrscht wird (Gleichheit der trägen und
+schweren Masse). Man denke etwa an ein Koordinatensystem, welches relativ
+zu einem Inertialsystem im Sinne Newtons in gleichförmiger Rotation
+begriffen ist. Die relativ zu diesem System auftretenden
+Zentrifugalkräfte müssen im Sinne von Newtons Lehre als Trägheitskräfte
+Wirkungen der Trägheit aufgefaßt werden. Diese Zentrifugalkräfte :sind
+aber genau wie die Schwerewirkungen[6] proportional der Masse der Körper.
+Sollte es da nicht möglich :sein, das Koordinatensystem als ruhend und die
+Zentrifugalkräfte als Gravitationskräfte aufzufassen? Die Auf¦fassung
+liegt nahe, aber die klas¦s¦ische Mechanik verbietet es.
+
+Diese flüchtige Überlegung läßt ahnen, daß eine allgemeine
+Relativitäts¦theorie die Ge:setze der Gravitation liefern muß, und die
+konsequente Verfolgung des Gedankens hat die Hoffnung gerechtfertigt.
+
+Aber der Weg war schwerer als man denken :sollte, weil er das Aufgeben der
+Euklidischen Geometrie verlangte. Dies bedeutet: Die Ge:setze, nach
+welchen :sich die festen Körper im Raume anordnen lassen, stimmen nicht
+genau überein mit den Lagerungsgesetzen, welche die euklidische Geometrie
+den Körpern zuschreibt.  Dies meint man, wenn man von ,,Krümmung des
+Raumes`` redet. Die Grundbegriffe ,,Gerade``, ,,Ebene`` etc. verlieren
+dadurch ihre exakte Bedeutung in der Physik.  In der allgemeinen
+Relativitäts¦theorie :spielt die Lehre von Raum und Zeit, die Kinematik
+nicht mehr die Rolle eines von der übrigen Physik unabhängigen
+Fundamentes. Das geometrische Verhalten der Körper und der Gang der Uhren
+hängt vielmehr von den Gravitationsfeldern ab, die :selbst wieder von der
+Materie erzeugt :sind.
+
+Die neue Theorie der Gravitation weicht in prinzipieller Hinsicht von der
+Theorie Newtons bedeutend ab. Aber ihre praktischen Ergebnisse stimmen
+mit denen der Newton'schen Theorie :so nahe überein, daß es schwer fällt,
+Unterscheidungs-Kriterien zu finden, die der Erfahrung zugänglich :sind.
+Solche haben sich bis jetzt gefunden
+
+1) in der Drehung der Ellipsen der Planetenbahnen um die Sonne (beim
+Merkur bestätigt)
+
+2) in der Krümmung der Lichtstrahlen durch die Gravitationsfelder (durch
+die englischen Sonnenfinsternis-Aufnahmen bestätigt).
+
+3) in einer Verschiebung der Spektrallinien nach dem roten Spektralende
+hin des von Sternen bedeutender Masse zu uns gesandten Lichtes (bisher
+nicht bestätigt).
+
+Der Hauptreiz der Theorie liegt in ihrer logischen Geschlossenheit. Wenn
+eine einzige aus ihr gezogene Konsequenz :sich als unzutreffend erweist,
+muß :sie verlassen werden; eine  bloße Modifikation erscheint ohne
+Zerstörung des ganzen Gebäudes unmöglich.
+
+Niemand aber :soll denken, daß durch diese oder irgend eine andere
+Theorie Newtons große Schöpfung im eigentlichen Sinne verdrängt werden
+könnte. Seine klaren und großen Ideen werden als Fundament un:serer
+ganzen modernen Begriffsbildung auf dem Gebiete der natural philosophie
+ihre eminente Bedeutung in aller Zukunft behalten.[7]
+

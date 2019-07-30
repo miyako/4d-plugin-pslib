@@ -1,0 +1,16 @@
+{
+    "name": "pslib",
+    "id": 20000,
+    "commands": [
+        {
+            "theme": "pslib",
+            "syntax": "pslib generate(&C;&J):O",
+            "threadSafe": true
+        },
+        {
+            "theme": "pslib",
+            "syntax": "pslib geometry(&C;&C):C",
+            "threadSafe": true
+        }
+    ]
+}

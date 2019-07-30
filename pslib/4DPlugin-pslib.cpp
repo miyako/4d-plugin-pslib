@@ -318,7 +318,9 @@ void setParams(PSDoc *psdoc, PA_ObjectRef o) {
                             string value = it->asString();
                             if(!name.compare("hyphendict"))
                             {
+#if VERSIONMAC
                                 convertPathSystemToPosix(value);
+#endif
                             }
                             PS_set_parameter(psdoc, name.c_str(), value.c_str());
                         }
@@ -345,10 +347,10 @@ void getFonts(PSDoc *psdoc, PA_CollectionRef fonts, font_list_t *fontIds) {
                 std::string font, file;
                 ob_get_s(o, L"name", &font);
                 ob_get_s(o, L"file", &file);
-                
+#if VERSIONMAC                
                 convertPathSystemToPosix(font);
                 convertPathSystemToPosix(file);
-                
+#endif                
                 int fontId = PS_findfont(psdoc,
                                          font.c_str(),
                                          file.c_str(), (int)ob_get_n(o, L"embed"));

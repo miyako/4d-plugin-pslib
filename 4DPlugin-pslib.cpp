@@ -11,6 +11,7 @@
 #include "4DPlugin-pslib.h"
 
 #include <vector>
+#include <cmath>
 
 // the shared 4DPlugin-JSON.h has no std::string getter (ob_get_s) and no
 // property type getter (ob_get_value_type); keep them local to this plugin
@@ -113,12 +114,10 @@ C_BLOB::~C_BLOB()
 }
 
 void OnStartup() {
-    PS_mp_init();
     PS_boot();
 }
 
 void OnExit() {
-    PS_mp_list_unfreed();
     PS_shutdown();
 }
 
@@ -185,10 +184,13 @@ void convertPathSystemToPosix(std::string& path) {
     if(path.length())
     {
         NSString *str = [[NSString alloc]initWithUTF8String:path.c_str()];
+        if(!str) return;
         NSURL *u = (NSURL *)CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (CFStringRef)str, kCFURLHFSPathStyle, false);
         [str release];
+        if(!u) return;
         CFStringRef p = CFURLCopyFileSystemPath((CFURLRef)u, kCFURLPOSIXPathStyle);
         [u release];
+        if(!p) return;
         size_t size = CFStringGetMaximumSizeForEncoding(CFStringGetLength(p), kCFStringEncodingUTF8) + sizeof(uint8_t);
         std::vector<uint8_t> buf(size);
         CFIndex len = 0;
@@ -391,15 +393,30 @@ void getFonts(PSDoc *psdoc, PA_CollectionRef fonts, font_list_t *fontIds) {
     }
 }
 
+/* "font" is an index into the fonts collection; vector::at() with a
+   negative, fractional, NaN or out-of-range double is undefined or throws */
+static bool getFontId(font_list_t *fontIds, double index, int *fontId) {
+    
+    if(std::isfinite(index) && index >= 0 && index < (double)fontIds->size())
+    {
+        *fontId = fontIds->at((size_t)index);
+        return true;
+    }
+    return false;
+}
+
 void processFont(PSDoc *psdoc, PA_ObjectRef d, font_list_t *fontIds) {
     
     if(d)
     {
         if(ob_is_defined(d, L"font"))
         {
-            int font = fontIds->at(ob_get_n(d, L"font"));
-            double size = ob_get_n(d, L"size");
-            PS_setfont(psdoc, font, size);
+            int font;
+            if(getFontId(fontIds, ob_get_n(d, L"font"), &font))
+            {
+                double size = ob_get_n(d, L"size");
+                PS_setfont(psdoc, font, size);
+            }
         }
     }
 }
@@ -464,13 +481,22 @@ void processTextArea(PSDoc *psdoc, PA_ObjectRef d) {
 
 void pslib_geometry(PA_PluginParameters params) {
     
+    PA_CollectionRef returnValue = PA_CreateCollection();
+    
     PSDoc *psdoc = PS_new();
+    
+    if(!psdoc)
+    {
+        PA_ReturnCollection(params, returnValue);
+        return;
+    }
+    
+    try
+    {
     
     PS_open_mem(psdoc, writeproc);
     
     font_list_t fontIds(0);
-    
-    PA_CollectionRef returnValue = PA_CreateCollection();
     
     /* load fonts */
     PA_CollectionRef fonts = PA_GetCollectionParameter(params, 1);
@@ -494,7 +520,8 @@ void pslib_geometry(PA_PluginParameters params) {
                 ob_get_std_string(o, L"encoding", &encoding);
                 original = value;
                 
-                int font = fontIds.at(ob_get_n(o, L"font"));
+                int font = 0;
+                bool hasFont = getFontId(&fontIds, ob_get_n(o, L"font"), &font);
                 double size = ob_get_n(o, L"size");
                 
                 PA_ObjectRef info = PA_CreateObject();
@@ -508,7 +535,7 @@ void pslib_geometry(PA_PluginParameters params) {
                 dimension[2] = 0;
                 double width = 0;
 
-                if(converted)
+                if(converted && hasFont)
                 {
                     if(ob_is_defined(o, L"width"))
                     {
@@ -590,6 +617,12 @@ void pslib_geometry(PA_PluginParameters params) {
     PS_close(psdoc);
     PS_delete(psdoc);
     
+    }
+    catch(...)
+    {
+        /* always return a value; psdoc is abandoned on this path */
+    }
+    
     PA_ReturnCollection(params, returnValue);
 }
 
@@ -597,7 +630,18 @@ void pslib_generate(PA_PluginParameters params) {
 
     C_BLOB buf;
     
-    PSDoc *psdoc = PS_new2(NULL, PS_mp_malloc, PS_mp_realloc, PS_mp_free, &buf);
+    /* default allocator: PS_mp_malloc & co. record every block in one global
+       table with no lock, which is unsafe for a threadSafe command */
+    PSDoc *psdoc = PS_new2(NULL, NULL, NULL, NULL, &buf);
+    
+    if(!psdoc)
+    {
+        PA_ReturnBlob(params, NULL, 0);
+        return;
+    }
+    
+    try
+    {
     
     PS_open_mem(psdoc, writeproc2);
     
@@ -746,6 +790,14 @@ void pslib_generate(PA_PluginParameters params) {
     
     PS_close(psdoc);
     PS_delete(psdoc);
+    
+    }
+    catch(...)
+    {
+        /* always return a value; psdoc is abandoned on this path */
+        PA_ReturnBlob(params, NULL, 0);
+        return;
+    }
     
     PA_ReturnBlob(params, (void *)buf.getBytesPtr(), (PA_long32)buf.getBytesLength());
 }

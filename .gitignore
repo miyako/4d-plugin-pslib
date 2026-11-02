@@ -1,0 +1,8 @@
+.DS_Store
+build/
+test/Data/Logs/
+test/Logs/
+test/userPreferences.*/
+test/Project/DerivedData/
+test/Plugins/pslib.bundle/Contents/MacOS/
+test/Plugins/pslib.bundle/Contents/_CodeSignature/

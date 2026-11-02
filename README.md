@@ -7,7 +7,7 @@ pslib generates PostScript documents from a description you build as a 4D object
 | [pslib generate](#pslib-generate) | `BLOB` | Build a PostScript document from fonts and a page description |
 | [pslib geometry](#pslib-geometry) | `Collection` | Measure text, or fit text into a box and get what doesn't fit |
 
-**Platforms:** macOS, Windows (64-bit)
+**Platforms:** macOS (Apple silicon and Intel), Windows (64-bit)
 
 ---
 
@@ -19,7 +19,6 @@ pslib generates PostScript documents from a description you build as a 4D object
 - **Text is converted from Unicode to the font's 8-bit encoding** with iconv, using the `encoding` you pass (for example `"latin1"`). Characters that don't exist in that encoding make the conversion fail, and that text is then not drawn. Document metadata (`title`, `author`, …) is always converted to Latin-1.
 - **Failure is mostly silent.** Unknown keys are ignored, text that can't be converted is skipped, and a font index that doesn't exist is ignored. pslib's own warnings go to the standard error stream, not to 4D.
 - **Preemptive processes:** the manifest declares both commands thread-safe, but pslib switches the process-wide numeric locale every time it writes a number (`setlocale(LC_NUMERIC, …)` in its output routine). Running these commands in several preemptive processes at the same time can produce numbers formatted with the wrong decimal separator, and the switch affects the rest of 4D as well. Prefer calling them from one process at a time.
-- **Universal (Apple silicon) build pending.** The prebuilt libraries in `a/` (pslib, iconv, libpng, libtiff, libjpeg, zlib, jsoncpp) have no `arm64` slice, so the macOS build links for Intel (`x86_64`) only until they are rebuilt.
 
 ---
 

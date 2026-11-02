@@ -15,6 +15,11 @@
 
 #include "4DPlugin-JSON.h"
 
+#if __APPLE__
+/* macOS links the system libiconv (libiconv.tbd), which exports iconv_open,
+   not GNU libiconv's renamed libiconv_open */
+#define LIBICONV_PLUG
+#endif
 #include "iconv/iconv.h"
 #include "json/json.h"
 
